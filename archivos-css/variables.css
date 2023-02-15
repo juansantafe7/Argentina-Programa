@@ -1,0 +1,16 @@
+/* Creamos el root que contiene las variables, las cuales utilizaremos en nuestro código CSS.
+Invocando el nombre establecido le asignaremos un determido color o unidad de medida */
+
+:root{
+
+    --color-de-fondo: #fff;
+    --color-de-fondo-2:#f700ff;
+    --color-texto: #000;
+    --color-secundario: #4e4d53;
+    --color-principal: #f75023;
+    --grande: 3.5rem;
+    --h2: 3rem;
+    --p: 1.1rem;
+    --p-pequeño: .9rem;
+    
+}

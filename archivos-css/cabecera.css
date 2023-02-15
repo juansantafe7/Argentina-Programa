@@ -1,0 +1,140 @@
+/*
+Decidí dividir el código CSS en varios archivos, para que sea más amistoso con los programadores
+que vean este contenido.
+*/
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+
+
+body{
+
+    background: var(--color-de-fondo);
+    color: var(--color-texto);
+    background: url(../imagenes/fondo.png);
+
+
+}
+
+header{
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: .3s;
+
+}
+
+.logo img{
+
+    max-width: 50%;
+    width: 130px;
+    height: auto;
+
+}
+
+.lista-navegacion{
+
+    display: flex;
+
+}
+
+.lista-navegacion li{
+
+    position: relative;
+
+}
+
+.lista-navegacion a{
+
+    font-size:var(--p-pequeño);
+    color: var(--color-texto);
+    font-weight: 500;
+    padding: 10px 27px;
+
+}
+
+/* Añadimos efectos al texto cuando el usuario pasa su cursor sobre los enlaces mencionados
+utilizando hover */
+
+.lista-navegacion a::after{
+
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--color-principal);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+
+}
+
+.lista-navegacion a:hover::after{
+
+    width: 100%;
+
+}
+
+#menu-icono{
+
+    font-size: 35px;
+    color: var(--color-texto);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+
+}
+
+.top-btn{
+
+    display: inline-block;
+    text-align: center;
+    padding: 5px 20px;
+    background: transparent;
+    border: 2px solid var(--color-principal);
+    border-radius: 30px;
+    color: var(--color-texto);
+    letter-spacing: 1px;
+    font-size: var(--p-pequeño);
+    font-weight: 500;
+    transition: ease .50s;
+
+}
+
+.top-btn:hover{
+
+    transform: scale(1.1);
+    background: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    color: var(--color-de-fondo);
+
+}
+
+/*
+Hacemos que la clase creada mediante el uso de JS tenga estilos
+*/
+
+header.sticky{
+
+    background: var(--color-de-fondo);
+    padding: 13px 18%;
+    box-shadow: 0px 0px 10px rgb(0,0,0 / 10%);
+
+}

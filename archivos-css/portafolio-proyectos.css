@@ -1,0 +1,86 @@
+.cabecera-portafolio{
+
+    text-align: center;
+
+
+}
+
+.cabecera-portafolio h2{
+
+    font-size: var(--h2);
+    font-weight: 500;
+    margin: 7px 0px 20px;
+    line-height: 1.1;
+    
+}
+
+.cabecera-portafolio h3{
+
+    color: var(--color-principal);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.cabecera-portafolio p{
+
+    font-size: var(--p);
+    color: var(--color-secundario);
+    line-height: 28px;
+
+}
+
+.portafolio-contenido{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+
+.columna{
+
+    position: relative;
+
+}
+
+.columna img{
+
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
+
+.columna h3{
+
+    color: var(--color-principal);
+
+}
+
+.columna-contenido{
+
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    transition: all .40s;
+
+}
+
+.columna-contenido:hover{
+
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
+
+}

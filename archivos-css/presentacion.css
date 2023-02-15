@@ -1,0 +1,50 @@
+.presentacion{
+
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+
+}
+
+body{
+
+    background: url(https://static.vecteezy.com/system/resources/previews/005/658/953/non_2x/wallpaper-with-blue-light-color-blue-grid-mosaic-background-free-vector.jpg);
+    background-size: cover;
+    height: 50vh;
+
+}
+
+.ingreso{
+
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    width: 50vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    outline: none;
+    background: var(--color-de-fondo);
+    color: var(--color-principal);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 3rem;
+
+}
+
+.ingreso:hover{
+
+    transform: scale(1.1);
+    background: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    color: var(--color-de-fondo);
+    transition: ease .50s;
+
+}
